@@ -1,7 +1,7 @@
 /*
  * Author: Reeveli 
  * Part of Reeveli's Map locations mod.
- * Client side function to handle curator module dialog onUnload. Called from the Rev_locations_remove_dialog onUnload event.
+ * Client side function to handle curator module dialog onUnload. Called from the Rev_locations_dialog_CuratorNew onUnload event.
  *
  * Arguments:
  * 0: Dialog <DISPLAY>
@@ -18,6 +18,9 @@
  * Example:
  * [_display,_exitCode] call Rev_locations_fnc_onUnload
  *
+1.1
+	Notification replaced with sound + curator hint
+
  */
 
 params [
@@ -37,6 +40,8 @@ private _pos = getPos _logic;
 
 [_type,_pos,_text] remoteExec ["Rev_locations_fnc_new",0,true];
 
-["MapAreaAdded", [_text]] call BIS_fnc_showNotification;
+
+playSound "FD_Finish_F";
+["Location Created", _text, 8] call BIS_fnc_curatorHint;
 
 (findDisplay 312) setVariable ["Rev_locations_modulePos", nil];

@@ -19,14 +19,13 @@ class CfgPatches
 		authors[]= {"Reeveli"};
 		license = "https://www.bohemia.net/community/licenses/arma-public-license-share-alike";
 		url = "https://www.youtube.com/@Reeveli";			
-        version = 1.0;
-        versionStr = "1.0.1";
-        versionAr[] = {1, 0, 1};
+        version = 1.1;
+        versionStr = "1.1.0";
+        versionAr[] = {1, 1, 0};
 	};
 };
 
 #include "dialogs.hpp"
 #include "CfgFactionClasses.hpp"
 #include "CfgFunctions.hpp"
-#include "CfgNotifications.hpp"
 #include "CfgVehicles.hpp"

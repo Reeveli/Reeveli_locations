@@ -18,7 +18,7 @@ class RscCombo;
 class RscEdit;
 class RscText;
 
-class Rev_locations_remove_dialog
+class Rev_locations_dialog_CuratorNew
 {
 	idd = 7010;
 	movingEnable = true;

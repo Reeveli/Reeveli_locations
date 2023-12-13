@@ -68,7 +68,7 @@ class CfgVehicles
 				displayName = "Location name";
 				tooltip = "";
 				property = "Rev_Module_locations_name";
-				defaultValue = "'My Location'"; // Because this is an expression, one must have a string within a string to return a string
+				defaultValue = "''"; // Because this is an expression, one must have a string within a string to return a string
 			};
 
 			class ModuleDescription : ModuleDescription {}; // Module description should be shown last
@@ -111,7 +111,7 @@ class CfgVehicles
 		function = "Rev_locations_fnc_saveModulePos";
 		scope = 1;
 		scopeCurator = 2;	
-		curatorInfoType = "Rev_locations_remove_dialog";
+		curatorInfoType = "Rev_locations_dialog_CuratorNew";
 	};
 
 };

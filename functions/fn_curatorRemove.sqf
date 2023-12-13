@@ -11,6 +11,8 @@
  *
  * Return Value: BOOLEAN
  *
+1.2
+	Notification replaced with sound + curator hint
 1.1
 	Added code to delete logic after use on all exitcodes
  */
@@ -36,7 +38,8 @@ if (_activated) then
 	}
 	else
 	{
-		["MapAreaRemoved", [_name select 1]] call BIS_fnc_showNotification;
+		playSound "3DEN_notificationDefault";
+		["Location Removed", _name select 1, 8] call BIS_fnc_curatorHint;
 		[_pos] remoteExec ["Rev_locations_fnc_remove",0,true];
 	};
 };

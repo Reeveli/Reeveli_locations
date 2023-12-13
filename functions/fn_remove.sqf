@@ -11,6 +11,8 @@
  * Example:
  * [_pos] call Rev_locations_fnc_remove;
  *
+ 1.1
+	Removed unnecessary setType command
  */
 
 params
@@ -26,8 +28,7 @@ if (isNull _location) exitWith {
 };
 
 diag_log format ["Rev_locations_fnc_remove: %1", _location];
-
-_location setType "Invisible";								
+							
 private _invisible = createLocation [_location];		
 _invisible setType "Invisible";	
 
