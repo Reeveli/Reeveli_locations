@@ -11,6 +11,8 @@
  * Example:
  * [_pos] call Rev_locations_fnc_remove;
  *
+ 1.2
+	Increased search radius to 150m
  1.1
 	Removed unnecessary setType command
  */
@@ -20,7 +22,7 @@ params
 	["_pos",nil,[[]],[2,3]]
 ];
 
-private _location = nearestLocation [_pos,"",75];
+private _location = nearestLocation [_pos,"",150];
 
 if (isNull _location) exitWith {
 	diag_log "Rev_locations_fnc_remove: No location found";

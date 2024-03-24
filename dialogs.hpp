@@ -1,3 +1,10 @@
+/*
+ * Author: Reeveli
+ * Part of Add & Remove Map Labels -mod.
+ * Custom dialog for curator module.
+1.0.1
+	Added header and cleaned some missing semi-colons.
+*/
 
 #define REV_LOC_GRID_SIZE				36
 
@@ -57,7 +64,7 @@ class Rev_locations_dialog_CuratorNew
 			y = REV_LOC_Y + REV_LOC_BUTTON_H + REV_LOC_GAB_H + 1 * REV_LOC_BAR_H;
 			w = REV_LOC_BUTTON_W;
 			h = 2 * REV_LOC_BAR_H;
-			text = "Location name:"
+			text = "Location name:";
 			colorBackground[] = {0,0,0,0};
 			sizeEx = 1.5 * pixelGridNoUIScale * pixelH;
 			moving = true;			
@@ -69,7 +76,7 @@ class Rev_locations_dialog_CuratorNew
 			y = REV_LOC_Y + REV_LOC_BUTTON_H + REV_LOC_GAB_H + 1 * REV_LOC_BAR_H;
 			w = REV_LOC_W - 7 * REV_LOC_GAB_W - REV_LOC_BUTTON_W;
 			h = 2 * REV_LOC_BAR_H;
-			text = ""
+			text = "";
 			sizeEx = 1.5 * pixelGridNoUIScale * pixelH;
 		};
 		class Text_type: Text_name
@@ -79,7 +86,7 @@ class Rev_locations_dialog_CuratorNew
 		};
 		class ListBox_type: RscCombo
 		{
-			idc = 7012
+			idc = 7012;
 			x = REV_LOC_X + 4 * REV_LOC_GAB_W + REV_LOC_BUTTON_W;
 			y = REV_LOC_Y + REV_LOC_BUTTON_H + REV_LOC_GAB_H + 4 * REV_LOC_BAR_H;
 			w = REV_LOC_W - 7 * REV_LOC_GAB_W - 2 * REV_LOC_BUTTON_W;
