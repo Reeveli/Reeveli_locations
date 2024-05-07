@@ -20,9 +20,9 @@ class CfgPatches
 		name = "Add & Remove Map Labels";
 		license = "https://www.bohemia.net/community/licenses/arma-public-license-share-alike";
 		url = "https://www.youtube.com/@Reeveli";			
-        version = 1.2;
-        versionStr = "1.2.0";
-        versionAr[] = {1, 2, 0};
+        version = 1.3;
+        versionStr = "1.3.0";
+        versionAr[] = {1, 3, 0};
 	};
 };
 

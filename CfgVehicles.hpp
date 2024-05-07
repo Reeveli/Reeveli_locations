@@ -41,31 +41,31 @@ class CfgVehicles
 			class LocationType : Combo
 			{
 				property = "Rev_Module_locations_type";	// Unique property (use "<tag>_<moduleClass>_<attributeClass>" format to ensure that the name is unique)
-				displayName = "Location type";			// Argument label
+				displayName = "$STR_3den_object_attribute_type_displayname";			// Argument label
 				typeName = "STRING";							// Value type, can be "NUMBER", "STRING" or "BOOL"
 				defaultValue = "'NameCity'";							// Default attribute value. Warning: this is an expression, and its returned value will be used
 
 				// Listbox items
 				class Values
 				{
-					class City		{ name = "City";					value = "NameCity"; };
-					class Capital	{ name = "Capital City";			value = "NameCityCapital"; };
-					class Village	{ name = "Village";					value = "NameVillage"; };
-					class Local		{ name = "Local";					value = "NameLocal"; };
-					class Marine	{ name = "Marine";					value = "NameMarine"; };					
-					class Safety	{ name = "Safety Zone";				value = "SafetyZone"; };					
-					class Strategic	{ name = "Strategic";				value = "Strategic"; };					
-					class Rock		{ name = "Rock Area";				value = "RockArea"; };					
-					class Hill		{ name = "Hill";					value = "Hill"; };					
-					class Leaf		{ name = "Vegetation Broad Leaf";	value = "VegetationBroadleaf"; };					
-					class Palm		{ name = "Vegetation Palm";			value = "VegetationPalm"; };					
-					class Vineyard	{ name = "Vegetation Vineyard";		value = "VegetationVineyard"; };					
-					class View		{ name = "View Point";				value = "ViewPoint"; };					
+					class City		{ name = "$STR_name_city";						value = "NameCity"; };
+					class Capital	{ name = "$STR_name_capital";					value = "NameCityCapital"; };
+					class Village	{ name = "$STR_name_village";					value = "NameVillage"; };
+					class Local		{ name = "$STR_name_localname";					value = "NameLocal"; };
+					class Marine	{ name = "$STR_name_marine";					value = "NameMarine"; };					
+					class Safety	{ name = "$STR_a3_cfgmarkers_loc_safetyzone0";	value = "SafetyZone"; };					
+					class Strategic	{ name = "$STR_a3_cfglocationtypes_strategic0";	value = "Strategic"; };					
+					class Rock		{ name = "$STR_name_rockarea";					value = "RockArea"; };					
+					class Hill		{ name = "$STR_name_hill";						value = "Hill"; };					
+					class Leaf		{ name = "$STR_name_vegb";						value = "VegetationBroadleaf"; };					
+					class Palm		{ name = "$STR_name_vegp";						value = "VegetationPalm"; };					
+					class Vineyard	{ name = "$STR_name_vegv";						value = "VegetationVineyard"; };					
+					class View		{ name = "$STR_name_viewpoint";					value = "ViewPoint"; };					
 				};
 			};
 			class LocationName: Edit
 			{
-				displayName = "Location name";
+				displayName = "$STR_a3_combatpatrol_modules_4";
 				tooltip = "";
 				property = "Rev_Module_locations_name";
 				defaultValue = "''"; // Because this is an expression, one must have a string within a string to return a string
@@ -94,7 +94,7 @@ class CfgVehicles
 
 		class ModuleDescription : ModuleDescription
 		{
-			description = "Place this module on top of a existing location you wish to remove. Search radius is 75m";
+			description = "Place this module on top of a existing location you wish to remove. Search radius is 150m";
 		};
 
 	};

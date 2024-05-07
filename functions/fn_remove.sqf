@@ -1,7 +1,7 @@
 /*
  * Author: Reeveli
  * Part of Reeveli's Map locations mod.
- * Remove closest location (search radius 75m). Must be run globally on all clients.
+ * Remove closest location (search radius 150m). Must be run globally on all clients.
  *
  * Arguments:
  * 0: Position <ARRAY>
@@ -11,6 +11,8 @@
  * Example:
  * [_pos] call Rev_locations_fnc_remove;
  *
+ 1.2.1
+	Updated wrong function header info
  1.2
 	Increased search radius to 150m
  1.1
