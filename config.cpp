@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class Reeveli_locations
+	class Rev_locations
 	{
 		units[]=
 		{

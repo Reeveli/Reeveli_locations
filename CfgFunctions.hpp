@@ -4,7 +4,7 @@ class CfgFunctions
 	{
 		class Locations
 		{
-			file="\Reeveli_locations\functions";
+			file="\Rev_locations\functions";
         	class curatorRemove;
         	class moduleNew;
         	class moduleRemove;
